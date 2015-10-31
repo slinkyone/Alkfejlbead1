@@ -61,7 +61,9 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 	Cloud 9 - c9.io
 		Egy online workspace-t hoz létre - virtuális gépet amin biztosítja a Node.js futtatásához szükséges összes függőséget.
 2. Könyvtárstruktúrában lévő mappák funkiójának bemutatása
+
 	![alt text](http://i.imgur.com/bmMR7xL.png "Könyvtár struktúra")
+	
 	1. bead - Fő modulok
 	2. models - Az adatmodellek user és a teendők
 	3. node-modules - Node.js modulok amiket használ a kód
@@ -93,12 +95,15 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 ### Felhasználói dokumentáció
 
 1. A futtatáshoz ajánlott hardver-, szoftver konfiguráció
-	Böngészőben futó alkalmazás
+	Böngészőben futó alkalmazás nincs különösebb hardver igénye.
+	Ajánlott szoftver - Google Chrome, Firefox, Opera, Safari
+	
 2. Telepítés lépései: hogyan kerül a Githubról a célgépre a program
 	git clone https://github.com/slinkyone/Alkfejlbead1
 	Telepítés meglévő fileok elhejetése majd konzolban npm -install parancs-al lefut a telepítés. node index-el pedig elindul a program
 	Az app telepítve megtalálható az alábbi linken: http://cstodo.herokuapp.com/ és regisztráció után szabadon használható
+
 3. A program használata
 	A regisztráció és belépés után lehetőségünk van teendő létrehozására a Hozzáadás menüpontban a teendő leírásának megadásával és az elvégzendő nevének kiválasztásával. Csak regisztrált tagok közül választhatunk.
-	A Listázás menüpontban láthatjuk az elvégzedő teendőket
+	A Listázás menüpontban láthatjuk az elvégzedő teendőket megtekinthetjük/módosíthatjuk törölhetjük és elvégzetté tehetjük.
 	![alt text](http://i.imgur.com/g8hB3O9.png "Listázás")
