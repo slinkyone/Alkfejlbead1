@@ -4,37 +4,17 @@
 
 Első beadandóként egy kis webes alkalmazás elkészítése a cél szerveroldali technológiák segítségével. A feladatnak mininálisan tartalmaznia kell:
 
-- legalább két modellt, egy-sok kapcsolatban - kész
-- legalább 1 űrlapot - kész
-- legalább 1 listázó oldalt - kész
-- legyen lehetőség új felvételére - kész
-- legyen lehetőség meglévő szerkesztésére - kész
-- legyen lehetőség meglévő törlésére - kész
-- legyenek benne csak hitelesítés után elérhető funkciók - kész
-- perzisztálás fájlba történjen - kész
+- legalább két modellt, egy-sok kapcsolatban - [x]
+- legalább 1 űrlapot - [x]
+- legalább 1 listázó oldalt - [x]
+- legyen lehetőség új felvételére - [x]
+- legyen lehetőség meglévő szerkesztésére - [x]
+- legyen lehetőség meglévő törlésére - [x]
+- legyenek benne csak hitelesítés után elérhető funkciók - [x]
+- perzisztálás fájlba történjen - [x]
 - közzététel Herokun - http://cstodo.herokuapp.com/
 
-Az előző kódrészlet eredménye:
-
 ![Adatbázis kapcsolati modell](images/kapcs.png)
-
-
-## A dokumentáció szerkezete
-
-A dokumentáció felépítésével kapcsolatos elvárások alapvetően megfelelnek az előzménytárgyban megfogalmazott elvárásoknak, de ki is egészülnek a tárgy webes jellegének megfelelően. A következő segédanyagok használhatók ehhez:
-
-- [Az előzménytárgy dokumentációval kapcsolatos elvárásai](http://webprogramozas.inf.elte.hu/alkfejl/A_dokumentacio_felepitese.pdf)
-- [A gyakorlatokon tervezéssel kapcsolatban elhangzott diák](http://webprogramozas.inf.elte.hu/alkfejl/03.html#/4)
-- [Webes alkalmazások tervezése, tervezési eszközök](http://ade.web.elte.hu/wabp/lecke2_lap1.html)
-- [További hallgatói jegyzetek a különböző UML diagramokkal kapcsolatban](http://webprogramozas.inf.elte.hu/alkfejl/dok_uml_hallgatoi_anyagok.zip)
-
-A diagramok elkészítéséhez bármilyen eszköz használható. Néhány ajánlat:
-
-- [nomnoml](http://nomnoml.com/): sokféle diagramtípus
-- [js-sequence-diagrams](https://bramp.github.io/js-sequence-diagrams/): szekvenciadiagramok
-- [Lumzy](http://lumzy.com/app/): webes mockupkészítő eszköz
-- [LayoutIt](http://www.layoutit.com/build): designtervekhez
-- [Bootswatch](http://bootswatch.com/): designtervekhez
 
 A dokumentáció a következő részeket tartalmazza:
 
@@ -78,21 +58,47 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 ### Implementáció
 
 1. Fejlesztői környezet bemutatása
+	Cloud 9 - c9.io
+		Egy online workspace-t hoz létre - virtuális gépet amin biztosítja a Node.js futtatásához szükséges összes függőséget.
 2. Könyvtárstruktúrában lévő mappák funkiójának bemutatása
+	![alt text](http://i.imgur.com/bmMR7xL.png "Könyvtár struktúra")
+	bead - Fő modulok
+	models - Az adatmodellek user és a teendők
+	node-modules - Node.js modulok amiket használ a kód
+	test - Tesztek
+	views - Kinézeti - megjelenítési sémák aloldalanként
+	
 
 ### Tesztelés
 
-Automatikus tesztek szükségesek. Nem kell teljeskörű tesztelés, a hallgató mutassa meg, hogy képes ilyen tesztek írására.
-
 1. Tesztelési környezet bemutatása
-2. Egységtesztek: legalább 1 adatmodell tesztelése
+	A Mocha egy JavaScript alapú teszkörnyezet Node.js-hez. Könnyebbé és rugalmasabbá teszi a tesztelési folyamatot.
+2. Egységtesztek: 
+  UserTest
+    ✓ should create a new user (532ms) - user létrehozása
+    ✓ should be able to find a user (258ms) - user létezésének vizsgálata
+    ✓ should throw error for invalid data - hibás adat vizsgálat
+
+  #validPassword
+    ✓ should return true with right password (603ms) 
+    ✓ should return false with wrong password (488ms)
+	
 3. Funkcionális felületi tesztek: legalább 1 folyamat tesztelése
-    1. VAGY: Selenium IDE használatával
-    2. VAGY: zombie.js használatával
-4. Tesztesetek felsorolása: milyen eseteket próbált végig a hallgató
+	Selenium IDE használatával - Bejelentkezés tesztelése
+
+	![alt text](http://i.imgur.com/70OlwJq.png "Tesztelés")
+
+
 
 ### Felhasználói dokumentáció
 
 1. A futtatáshoz ajánlott hardver-, szoftver konfiguráció
+	Böngészőben futó alkalmazás
 2. Telepítés lépései: hogyan kerül a Githubról a célgépre a program
+	git clone https://github.com/slinkyone/Alkfejlbead1
+	Telepítés meglévő fileok elhejetése majd konzolban npm -install parancs-al lefut a telepítés. node index-el pedig elindul a program
+	Az app telepítve megtalálható az alábbi linken: http://cstodo.herokuapp.com/ és regisztráció után szabadon használható
 3. A program használata
+	A regisztráció és belépés után lehetőségünk van teendő létrehozására a Hozzáadás menüpontban a teendő leírásának megadásával és az elvégzendő nevének kiválasztásával. Csak regisztrált tagok közül választhatunk.
+	A Listázás menüpontban láthatjuk az elvégzedő teendőket
+	![alt text](http://i.imgur.com/g8hB3O9.png "Listázás")
