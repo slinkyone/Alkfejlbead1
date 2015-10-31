@@ -14,19 +14,9 @@ Első beadandóként egy kis webes alkalmazás elkészítése a cél szerverolda
 - perzisztálás fájlba történjen - kész
 - közzététel Herokun - http://cstodo.herokuapp.com/
 
-A dokumentációt a Github kódtár `README.md` állományába kell megírni, ez jelenik majd meg a kódtár főoldalán.
-
-### Képek elhelyezése
-
-A dokumentációnak képeket is tartalmaznia kell. Ehhez a képeket feltöltjük egy könyvtárba (pl. `docs/images`) és a dokumentációból [relatív útvonalként hivatkozunk rá](https://help.github.com/articles/relative-links-in-readmes/):
-
-```
-![Kép felirata](images/kapcs.png)
-```
-
 Az előző kódrészlet eredménye:
 
-![Kép felirata](docs/images/database.png)
+![Adatbázis kapcsolati modell](images/kapcs.png)
 
 
 ## A dokumentáció szerkezete
