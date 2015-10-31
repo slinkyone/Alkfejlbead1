@@ -1,0 +1,40 @@
+<h1>Teendő adatai</h1>
+<form class="form-horizontal col-lg-8 col-lg-offset-2" method="post" action="/edit/{{todo.id}}">
+    <table class="table table-striped">
+        <tr>
+            <th>Teendő beküldésének ideje</th>
+            <td>{{todo.datum}}</td>
+        </tr>
+        <tr>
+            <th>Teendő elvégzője</th>
+            <td>{{todo.kinek}}</td>
+        </tr>
+        <tr>
+            <th>Teendő leírása</th>
+            <td>
+                {{#if todo.kesz}}
+                {{todo.leiras}}
+                {{else}}
+                <textarea class="form-control" name="leiras" id="leiras">{{todo.leiras}}</textarea>
+                {{/if}}
+            </td>
+        </tr>
+        <tr>
+            <th>Állapot</th>
+            <td>
+                {{#if todo.kesz}}
+                <span class="text-success">Kész</span>
+                {{else}}
+                <span class="text-warning">Végrehajtásra vár</span>
+                {{/if}}
+            </td>
+        </tr>
+    </table>
+    <div class="form-group">
+      <div class="col-lg-12">
+        <a href="/list" class="btn btn-default pull-left">Vissza</a>
+        <a href="/delete/{{todo.id}}" class="btn btn-danger pull-right">Törlés</a>
+        {{#if todo.kesz}}{{else}}<button type="submit" class="btn btn-success pull-right">Módosítás</button>{{/if}}
+        </div>
+    </div>
+</form>
