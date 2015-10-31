@@ -55,6 +55,7 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 4. Dinamikus működés
     1. Szekvenciadiagram
 
+	
 ### Implementáció
 
 1. Fejlesztői környezet bemutatása
@@ -89,8 +90,7 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 	Selenium IDE használatával - Bejelentkezés tesztelése
 
 	![alt text](http://i.imgur.com/70OlwJq.png "Tesztelés")
-
-
+	
 
 ### Felhasználói dokumentáció
 
@@ -105,5 +105,6 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 
 3. A program használata
 	A regisztráció és belépés után lehetőségünk van teendő létrehozására a Hozzáadás menüpontban a teendő leírásának megadásával és az elvégzendő nevének kiválasztásával. Csak regisztrált tagok közül választhatunk.
-	A Listázás menüpontban láthatjuk az elvégzedő teendőket megtekinthetjük/módosíthatjuk törölhetjük és elvégzetté tehetjük.
+	A Listázás menüpontban láthatjuk az elvégzedő teendőket, kereshetünk, megtekinthetjük/módosíthatjuk, törölhetjük és elvégzetté tehetjük.
+
 	![alt text](http://i.imgur.com/g8hB3O9.png "Listázás")
