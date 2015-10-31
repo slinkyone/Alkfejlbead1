@@ -62,11 +62,11 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 		Egy online workspace-t hoz létre - virtuális gépet amin biztosítja a Node.js futtatásához szükséges összes függőséget.
 2. Könyvtárstruktúrában lévő mappák funkiójának bemutatása
 	![alt text](http://i.imgur.com/bmMR7xL.png "Könyvtár struktúra")
-	bead - Fő modulok
-	models - Az adatmodellek user és a teendők
-	node-modules - Node.js modulok amiket használ a kód
-	test - Tesztek
-	views - Kinézeti - megjelenítési sémák aloldalanként
+	1. bead - Fő modulok
+	2. models - Az adatmodellek user és a teendők
+	3. node-modules - Node.js modulok amiket használ a kód
+	4. test - Tesztek
+	5. views - Kinézeti - megjelenítési sémák aloldalanként
 	
 
 ### Tesztelés
@@ -75,13 +75,13 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 	A Mocha egy JavaScript alapú teszkörnyezet Node.js-hez. Könnyebbé és rugalmasabbá teszi a tesztelési folyamatot.
 2. Egységtesztek: 
   UserTest
-    ✓ should create a new user (532ms) - user létrehozása
-    ✓ should be able to find a user (258ms) - user létezésének vizsgálata
-    ✓ should throw error for invalid data - hibás adat vizsgálat
+    1. ✓ should create a new user (532ms) - user létrehozása
+    2. ✓ should be able to find a user (258ms) - user létezésének vizsgálata
+    3. ✓ should throw error for invalid data - hibás adat vizsgálat
 
-  #validPassword
-    ✓ should return true with right password (603ms) 
-    ✓ should return false with wrong password (488ms)
+  validPassword
+    4. ✓ should return true with right password (603ms) 
+    5. ✓ should return false with wrong password (488ms)
 	
 3. Funkcionális felületi tesztek: legalább 1 folyamat tesztelése
 	Selenium IDE használatával - Bejelentkezés tesztelése
