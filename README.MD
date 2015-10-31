@@ -1,72 +1,27 @@
-# Tudnivalók a dokumentációról
+# Családi TODO
 
-## Az 1. beadandó feladatról
+## Az 1. beadandó feladat - Kuti Bence - HS74YU
 
 Első beadandóként egy kis webes alkalmazás elkészítése a cél szerveroldali technológiák segítségével. A feladatnak mininálisan tartalmaznia kell:
 
-- legalább két modellt, egy-sok kapcsolatban
-- legalább 1 űrlapot
-- legalább 1 listázó oldalt
-- legyen lehetőség új felvételére
-- legyen lehetőség meglévő szerkesztésére
-- legyen lehetőség meglévő törlésére
-- legyenek benne csak hitelesítés után elérhető funkciók
-- perzisztálás fájlba történjen
-- közzététel Herokun
-
-### Példa feladatok
-
-1. Receptek és hozzávalók
-2. Tantárgyak felvétele
-3. Raktár bevételezés
-4. Családi todo
-5. Családi büdzsé
-6. Névjegyek kezelése
-7. Munkaidő nyilvántartás
-
-## A feladat közzététele
-
-A feladatot a [Heroku platformon](https://www.heroku.com/) kell közzétenni. Először is regisztrálj a Heroku-n. A következő lépéseket Cloud9 parancssorában kell kiadni. Feltételezzük, hogy a kód már git-tel verziózva van. (Ha nincs, akkor `git init`, `git add .`, `git commit -m "Kezdet"`)
-
-1. `heroku create <alkalmazás neve> --region eu`
-2. `git push heroku master`
-
-Az alkalmazás a `<alkalmazás neve>.herokuapp.com` címen érhető el.
-
-Ha nem indulna, akkor a `heroku logs --tail` paranccsal meg lehet nézni a hibaüzeneteket.
-
-
-## A dokumentáció elhelyezése
-
-### Github
-
-A beadandót egy Github kódtárban (repository) kell tárolni. Ennek lépései:
-
-1. Új kódtár létrehozása
-2. Kódtár klónozása
-    1. Helyi munka esetén: `git clone https://...`
-    2. Cloud9 esetén: új workspace létrehozásakor meg lehet adni a kódtár elérhetőségét
-3. Kód írása
-4. Változások stage-elése: `git add .`
-5. Változások mentése: `git commit`
-6. Változások feltöltése: `git push` vagy `git push origin master`
+- legalább két modellt, egy-sok kapcsolatban - kész
+- legalább 1 űrlapot - kész
+- legalább 1 listázó oldalt - kész
+- legyen lehetőség új felvételére - kész
+- legyen lehetőség meglévő szerkesztésére - kész
+- legyen lehetőség meglévő törlésére - kész
+- legyenek benne csak hitelesítés után elérhető funkciók - kész
+- perzisztálás fájlba történjen - kész
+- közzététel Herokun - http://cstodo.herokuapp.com/
 
 A dokumentációt a Github kódtár `README.md` állományába kell megírni, ez jelenik majd meg a kódtár főoldalán.
-
-### Markdown és GFM
-
-A dokumentációt GFM-ben (Github Flavoured Markdown) formátumban kell megírni. Segítséget ehhez az alábbi linkeken lehet találni:
-
-- [Összefoglaló a markdown formátumról a Github oldalán](https://help.github.com/articles/markdown-basics/)
-- [Másik lényegretörő összefoglaló](http://www.web-crunch.com/resources/lowdown-markdown/)
-- [Leírás a GFM-ről](https://help.github.com/articles/github-flavored-markdown/)
 
 ### Képek elhelyezése
 
 A dokumentációnak képeket is tartalmaznia kell. Ehhez a képeket feltöltjük egy könyvtárba (pl. `docs/images`) és a dokumentációból [relatív útvonalként hivatkozunk rá](https://help.github.com/articles/relative-links-in-readmes/):
 
 ```
-![Kép felirata](docs/images/database.png)
+![Kép felirata](images/kapcs.png)
 ```
 
 Az előző kódrészlet eredménye:
