@@ -80,8 +80,6 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
         - todos: collection: 'todo'
     3. Állapotdiagram
 	![alt text](http://i.imgur.com/y7bLEO9.png "Todo állapotdiagrammja")
-4. Dinamikus működés
-    1. Szekvenciadiagram
 
 	
 ### Implementáció
