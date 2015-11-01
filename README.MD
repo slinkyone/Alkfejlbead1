@@ -30,21 +30,34 @@ A dokumentáció a következő részeket tartalmazza:
 A követelmény feltárás során felmérik és összegyűjtik a megrendelt szoftverrel szemben támasztott felhasználói követelményeket, elemzik az alkalmazási szakterületet. Részei:
 
 1. Követelmények összegyűjtése: a nyújtandó szolgáltatások ismertetése rövid, szöveges leírásként, sokszor felsorolásként jelenik meg.
-    1. Funkcionális elvárások
-    2. Nem funkcionális követelmények
-2. Szakterületi fogalomjegyzék: ha vannak speciális fogalmak, akkor ezeket itt lehet összegyűjteni és magyarázni.
-3. Használatieset-modell
-    1. Szerepkörök: lista rövid leírással
-    2. Használati eset diagramok: a szerepkörök és az elérhető funkiók kapcsolatát jelenítik meg, ha kell, akkor esetenként rövid magyarázó szöveggel.
-    3. Folyamatok pontos menete: legalább 1 folyamat kifejtése.
+    1. Lehessen regisztrálni usereket (családtagokat). Akiknek a regisztrálás után legyen joguk új teendőket felvenni, listázni, keresni, szerkeszteni, törölni és jelezni ha elvégzésre került a teendő.
+    2. Esztétikus könnyen kismerhető felhasználói felület.
+2. Használatieset-modell
+    1. Egy usercsoport aki belépés után éri el az adott menüket kívülről regisztráció és belépés nélkül ne legyen megtekinthető semmi más.
+    2. ![alt text](http://i.imgur.com/sT5AiZL.png "Használateset-diagram")
+	3. Folyamatok pontos menete: legalább 1 folyamat kifejtése.
 
 
 ### Tervezés
 
 1. Architektúra terv
-    1. komponensdiagram
+    1. ![alt text](http://i.imgur.com/Kte4yTf.png"komponensdiagram")
     2. Oldaltérkép
+		1. Publikus: -Főoldal, -Bejelentkezés, -Regisztráció
+		2. Belépett user: -Főoldal, -Bejelentkezés/Kilépés, -Todo lista, -Todo hozzáadása
     3. Végpontok
+		* GET ('/login/login')
+		* GET ('/login/signup')
+		* POST ('/login/signup')
+		* POST ('/login/login')
+		* GET ('/')
+		* GET ('/add')
+		* POST ('/add')
+		* GET ('/list')
+		* GET ('/delete/:id')
+		* GET ('/ready/:id')
+		* GET ('/todo/:id')
+		* POST ('/edit/:id')
 2. Felhasználóifelület-modell
     1. Oldalvázlatok
     2. Designterv (nem kell, elég a végső megvalósítás kinézete)
