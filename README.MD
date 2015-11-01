@@ -70,7 +70,7 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 		- kinek: 'string',
         - leiras: 'string',
         - kesz: 'boolean',
-        - user: model 'user'
+		- user: model 'user'
 		
 		* USER
 		- csaladtag: 'string',
