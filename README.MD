@@ -14,8 +14,6 @@ Első beadandóként egy kis webes alkalmazás elkészítése a cél szerverolda
 - perzisztálás fájlba történjen - [x]
 - közzététel Herokun - http://cstodo.herokuapp.com/
 
-![Adatbázis kapcsolati modell](images/kapcs.png)
-
 A dokumentáció a következő részeket tartalmazza:
 
 - Követelményanalízis
@@ -59,12 +57,29 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 		* GET ('/todo/:id')
 		* POST ('/edit/:id')
 2. Felhasználóifelület-modell
-    1. Oldalvázlatok
-    2. Designterv (nem kell, elég a végső megvalósítás kinézete)
+	![alt text](http://i.imgur.com/u6l8kHw.png "belépés")
+	![alt text](http://i.imgur.com/VEruAjR.png "regisztráció")
+	![alt text](http://i.imgur.com/vAZ1JD6.png "hozzáadás")
+	![alt text](http://i.imgur.com/ZQfrRmx.png "listázás")
+	![alt text](http://i.imgur.com/kPF2vWy.png "szerkesztés")
 3. Osztálymodell
-    1. Adatmodell
+    1. ![Adatbázis kapcsolati modell](images/kapcs.png)
     2. Adatbázisterv
+		* TODO
+		- datum: 'date',
+		- kinek: 'string',
+        - leiras: 'string',
+        - kesz: 'boolean',
+        - user: model: 'user'
+		
+		* USER
+		- csaladtag: 'string',
+        - password: 'string',  
+        - surname: 'string',
+        - forename: 'string',
+        - todos: collection: 'todo'
     3. Állapotdiagram
+	![alt text](http://i.imgur.com/y7bLEO9.png "Todo állapotdiagrammja")
 4. Dinamikus működés
     1. Szekvenciadiagram
 
