@@ -1,6 +1,6 @@
 # Családi TODO
 
-## Az 1. beadandó feladat - Kuti Bence - HS74YU
+## Az 1. beadandó feladat - HS74YU
 
 Első beadandóként egy kis webes alkalmazás elkészítése a cél szerveroldali technológiák segítségével. A feladatnak mininálisan tartalmaznia kell:
 
